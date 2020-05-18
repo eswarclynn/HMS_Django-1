@@ -27,7 +27,7 @@ USE `hosteldb` ;
 Create an authentication user and grant privileges to this user.
 ```
 CREATE USER 'hosteladmin'@'localhost:3306' IDENTIFIED WITH mysql_native_password ‘12345’;
-grant all on djangodatabase.* to ‘hosteladmin’@’%’;
+grant all on hosteldb.* to ‘hosteladmin’@’%’;
 flush privileges;
 ```
 
